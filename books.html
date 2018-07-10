@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Favorite Books</title>
+        <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    text-align: center;
+    
+}
+
+
+h1, h2, th{
+    text-decoration: underline;
+}
+table{
+    margin: 20px auto;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td{
+   border: 2px solid black;
+   padding: 5px;
+}
+#readContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#readContainer > div{
+    width: 300px;
+    padding: 30px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+#toReadContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #toReadContainer > div{
+      margin: 10px;
+      width: 300px;
+      padding:30px;
+      background-color: lightgreen;
+  }
+        </style>
+    </head>
+
+    <body>
+            
+                       <a href="food.html" id="school">Recipe</a>
+                       <a href="index.html" id="college">Home</a>
+                       <a href="commerce.html" id="commerce">commerce</a>
+                   
+            
+        <h1>You are what you <strike>Eat</strike> Read!</h1>
+ 
+       <h2>My Review for the Books I have read(not every page)</h2>
+       
+       <table>
+        <tr>
+           <th>Name</th>
+           <th>Subject</th>
+           <th>Review</th>
+        </tr>
+
+        <tr>
+            <td>Concept of physics</td>
+            <td>Physics Intermediate</td>
+            <td>Loved it ! It's engaging, friendly and addictive</td>
+            
+        </tr>
+
+         <tr>
+                <td>Electric machines</td>
+                <td>Electrical engineering</td>
+                <td>Great book, very well explained concepts</td>
+         </tr>
+         <tr>
+                <td>Gyana Yoga</td>
+                <td>Spiritual</td>
+                <td>Mind blowing, enlightening</td>
+         </tr>
+         <tr>
+                <td>Cosmos</td>
+                <td>Science</td>
+                <td>happy readinding, though not convinced all the claims are true</td>
+         </tr>
+         
+       </table>
+        <div id="readBooks">
+            <h2>Books Read(almost completed)</h2>
+         <div id="readContainer">
+             <div>Cosmos</div>
+             <div>Concept of physics</div>
+             <div>Makers of modern India(Guha)</div>
+             <div>Statistics</div>
+             <div>Raja Yoga</div>
+             <div>Gyana Yoga</div>
+         </div>   
+        </div>
+
+        <div id="toReadBooks">
+            <h2>Books To Read</h2>
+         <div id="toReadContainer">
+             <div>Flatland</div>
+             <div>Panchatantra</div>
+             <div>Analysis of electric machines</div>
+             <div>My experiment with the truth</div>
+             <div>Feynman Lecture of physics</div>
+             
+         </div>   
+        </div>
+    </body>
+</html>
