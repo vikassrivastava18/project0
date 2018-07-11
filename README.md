@@ -1,2 +1,3 @@
-# projectH0
-This is project 0 for the Harward Web Programming course.
+# Project 0
+
+Web Programming with Python and JavaScript
