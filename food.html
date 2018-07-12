@@ -1,234 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Recipe</title>
-	<style >
-		/*CSS*/
-		body {
-            margin:0px;
-			font-size: 1.2em;
-		    background-color:lightblue ;  
-			background-image: rest1.jpg;
-		}
+	<head>
+		<title>Recipe Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="food.scss">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
 
-       
-		header{
+	<body>
+		<header>
+			<nav>
+			<a href="index.html">HOME</a>
+			<a href="commerce.html">COMMERCE</a>
+			<a href="books.html">BOOKS</a>
+		    </nav>
 
-             background-color: orange;
-			 margin-top: 0px;
-             position: fixed;  
-             top:0px;
-             width:100%;
-             height:60px;
-             text-align: center;
-			 color:crimson;
-			 text-decoration: underline;
-		     padding:20px;    
-               
-		}
-		h1{
-		font-size: calc(16px + 1.0vw);}
-       #top{
-       	margin-bottom: -25px;
-       }
-
-		nav{width:100%;
-			padding: 20px;
-          margin-top:70px;
-       
-           
-		}
-		ul{
-
-			text-align:center;
-			padding: 0.2rem;
-            background-color: white;
-			list-style-type:  none;
-			padding: 0;
-		}
-		li{
-		     display: inline;
-			padding: 20px;
-		}
-		#hoverHere{
-			position:relative;
-			display: inline-block;
-		}
-		#liList{
-			display:none;
-			position: absolute;			
-			padding:3px;
-			border:1px solid grey;
-		}
-		#dropdown:hover{
-			display:block;
-		}
-
-		#mainDiv{
-             
-			border:8px solid yellow;
-			width:70%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-       
-		div:hover{
-			background-color: white;
-		}
-
-		
-
-		h2{
-
-			width:100%;
-			color: green;
-			font-size: 40px;
-			background-color: black;
-			padding: 20px ;
-		
-            text-align: center;
-		}
-		li{
-			color: dimgrey;
+			<div>
+				<h1>INDIAN DELICACIES</h1>
+			</div>
+		</header>
 	
-
-        }
-		
-		img{
-			width:350px;
-                        height:auto;
-			border:10px solid white;
+		<main>
+			<h2>MY LIST OF BEST INDIAN FOOD</h2>
 			
-			border-radius: 20px;
-		}
-		p{
-			color: orange;}
-	
-		div{
-             display:flex;
-             flex-flow:row wrap;
-             justify-content:center;}
-	table,tr{   
-         	border:8px dashed purple;
-			border-collapse: collapse;
-			margin-left: 20px;
-		}
-		th,td{
-		    border-bottom:10px;
-			padding: 20px 10px;
-			color: brown;
-		}
-        tr:hover{background-color: red;}
-		
-		#stayfixed{
-			padding:20px;
-			background-color: black;
-			color: white;
-		}
-		@media all and (max-width: 700px){
-		#mainDiv{
-		width: 85%;}
-		div img,div table{
-		max-width: 100%;
-		height: auto;}
-		}
-	</style>
-</head>
-
-<body  >
-
-<header>
-<h1 id="top">My Favorite Cousines</h1>
-</header>
-
-<nav>
-	<ul>
-	
-          
-          	<li><a href="commerce.html" id="school">Commerce</a></li>
-	        <li><a href="food.html" id="college">Home</a></li>
-	        <li><a href="books.html" id="advaita">Books</a></li>
-          
-		
-		
-	</ul>
-</nav>
-
-
-<div id="mainDiv">	
-
-
-
-<br>
-
-<h2 id="pizza">Pizza</h2>
-<div>
-<img  id="pic" src="images/pizza.gif" alt="Pizza Italian" width="500">
-
-<table>
-	<tr>
-		<th>Ingrdiants</th><th>Quantity</th> 
-	</tr>
-	<tr>
-		<td>Item1</td><td></td>
-	</tr>
-	<tr>
-		<td>item2</td><td></td>
-	</tr>
-</table>
-<ol>
-	<li>Step 1</li>
-	<li>Step 2</li>
-	<li>Step 3</li>
-</ol>
-</div>
-<br>
-
-<h2 id="paneer">Paneer</h2>
-<div>
-<img src="images/paneer.jpg" alt="paneer pic " width="500">
-
-<table>
-	<tr>
-		<th>Ingrdiants</th><th>Quantity</th> 
-	</tr>
-	<tr>
-		<td>Item1</td><td></td>
-	</tr>
-	<tr>
-		<td>item2</td><td></td>
-	</tr>
-</table>
-<ol>
-	<li>Step 1</li>
-	<li>Step 2</li>
-	<li>Step 3</li>
-</ol>
-	</div>
-	<br>
-
-<h2 id="salad">Salad</h2>
-	<div>
-	<img src="images/salad.jpg" alt="Salad special" width="500">
-	<table>
-		<tr>
-		<th>Ingrdiants</th><th>Quantity</th> 
-	</tr>
-	<tr>
-		<td>Item1</td><td></td>
-	</tr>
-	<tr>
-		<td>item2</td><td></td>
-	</tr>
-	</table>
-	<ol>
-	<li>Step 1</li>
-	<li>Step 2</li>
-	<li>Step 3</li>
-</ol>
+					<h3>PANEER</h3>
+				<div class="container">
+				<div class="row">
+				<div class="col-md-6 col-lg-4 col-sm-12">
+					<div><img src="images/paneer.jpg" class="img-responsive" alt="paneer"></div>
+				</div>
+				<div class="col-md-6 col-lg-4 col-sm-12"><div>
+				   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor in inventore officia nisi ratione? Illo et itaque maiores nesciunt!</div></div>
+				<div class="col-md-6 col-lg-4 col-sm-12">
+						<div> 
+								<h3>how to make</h3>
+				   <ol>
+					   <li>step1......</li>
+					   <li>step3......</li>
+					   <li>step4......</li>
+				   </ol>
+			   </div></div>
+			</div>
+		</div>
+		<h3>DOSA</h3>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6 col-lg-4 col-sm-12">
+			<div><img src="images/dosa.jpg" class="img-responsive" alt="paneer"></div>
+		</div>
+		<div class="col-md-6 col-lg-4 col-sm-12"><div>
+		   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor in inventore officia nisi ratione? Illo et itaque maiores nesciunt!</div></div>
+		<div class="col-md-6 col-lg-4 col-sm-12">
+		  <div> <h3>how to make</h3>
+		   <ol>
+			   <li>step1......</li>
+			   <li>step3......</li>
+			   <li>step4......</li>
+		   </ol>
+	   </div></div>
 	</div>
 </div>
-	<a  href="#mainDiv" id= "stayfixed">Go Top</a>
+<h3>BUTTER CHICKEN</h3>
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-lg-4 col-sm-12">
+	<div><img src="images/butterChicken.jpg" class="img-responsive" alt="paneer"></div>
 </div>
-</body>
+<div class="col-md-6 col-lg-4 col-sm-12"><div>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor in inventore officia nisi ratione? Illo et itaque maiores nesciunt!</div></div>
+<div class="col-md-6 col-lg-4 col-sm-12">
+  <div> <h3>how to make</h3>
+   <ol>
+	   <li>step1......</li>
+	   <li>step3......</li>
+	   <li>step4......</li>
+   </ol>
+</div></div>
+</div>
+</div>
+		</main>
+		
+
+	</body>
 </html>
