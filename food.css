@@ -1,0 +1,38 @@
+#thirdDiv, #secondDiv, #firstDiv {
+    border: 8px solid lightblue;
+    padding: 10px;
+  }
+  #thirdDiv div img, #secondDiv div img, #firstDiv div img {
+    border: 4px solid white;
+    border-radius: 3px;
+  }
+  #thirdDiv div p, #secondDiv div p, #firstDiv div p {
+    font-size: 120%;
+  }
+  #thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
+    margin-top: 0px;
+  }
+  
+  body {
+    text-align: center;
+    font-family: Halvetica, Arial, san-serif;
+    background-color: pink;
+  }
+  
+  h1 {
+    padding: 5px;
+    color: red;
+    background-color: lightgreen;
+  }
+  
+  #firstDiv div div h3 {
+    color: blue;
+  }
+  
+  #secondDiv div div h3 {
+    color: red;
+  }
+  
+  #thirdDiv div div h3 {
+    color: green;
+  }
