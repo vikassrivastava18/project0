@@ -1,5 +1,67 @@
-$color: red;
+$color1: red;
+$color2: lightgreen;
+$color3: pink;
+%rows{
+    border: 8px solid lightblue;
+    padding: 10px;
+    div{
+        img{
+            border: 4px solid white;
+            border-radius: 3px;
+        }
+    }
+    div{
+        p{
+            font-size: 120%;
+        }
+    }
+    div{
+        div{
+          h3{
+             margin-top: 0px;
+          }
+        }
+    }
+}
 
+body{
+    text-align: center;
+    font-family: Halvetica, Arial, san-serif;
+    background-color: $color3;
+}
 h1{
-    color: $color;
+    padding: 5px;
+    color: $color1;
+    background-color: $color2;
+}
+
+#firstDiv{
+    @extend %rows;
+    div{
+        div{
+            h3{
+                color:blue;
+            }
+        }
+    }
+}
+#secondDiv{
+    @extend %rows;
+    div{
+        div{
+            h3{
+                color:red;
+            }
+        }
+    }
+}
+#thirdDiv{
+    @extend %rows;
+    div{
+        div{
+            h3{
+                color:green;
+            }
+        }
+    }
 }
