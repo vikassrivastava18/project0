@@ -1,5 +1,6 @@
 #thirdDiv, #secondDiv, #firstDiv {
-    border: 8px solid lightblue;
+    border: 8px solid orange;
+    background-color:lightgreen;
     padding: 10px;
   }
   #thirdDiv div img, #secondDiv div img, #firstDiv div img {
@@ -16,7 +17,7 @@
   body {
     text-align: center;
     font-family: Halvetica, Arial, san-serif;
-    background-color: pink;
+    background-color: lightblue;
   }
   
   h1 {
