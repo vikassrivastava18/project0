@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/style.css">
+	<style>
+		#register{
+			width: 70%;
+			margin: 0 auto;
+		}
+		label{
+			width:30%;
+			text-align: center;
+		}
+		input{
+			width: 50%;
+			border-radius: 10%;
+		}
+		h2{
+			text-align: center;
+		}
+		button{
+			display: block;
+			width: 20%;
+			margin-left: 40%;
+		}
+	</style>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="static/book.jpg" width="100px" alt="Website Logo">
+            <h1>Reading Is Good</h1>
+            
+            <span><a href="">Login</a> &nbsp;<a href="">Register</a></span>
+           
+        </header>
+        
+  
+	<div id="register">
+	<h2>REGISTER</h2>
+		   
+	<form action="" method="POST">
+	<label for="name">Name</label>
+	<input type="text" name="name" placeholder="Vikas" id="name" required>
+	<br>
+
+	<label for="age">AGE</label>
+	<input type="number" name="age" placeholder="25" value="20" step="1" required>
+	<br>
+
+	<label for="Username">Pick A Username</label>
+	<input type="text" name="username" id="username" placeholder="VikasRocks" required>
+	<br>
+
+	<label for="password">password</label>
+	<input type="password" name="password" id="password" placeholder="******" required>
+	<br>
+	<button id="user_register" class="btn">Submit</button>
+	</form>
+	
+	</div>
+</body>
+</html>

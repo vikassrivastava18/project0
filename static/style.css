@@ -1,0 +1,52 @@
+body,html{
+    /*text-align: center;*/
+    background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+    }
+
+header{
+    text-align: center;
+    
+    border: 4px solid lightblue;
+}
+header image{
+    border: 4px solid white;
+    }
+header h1{
+    /*font-size:150%;*/
+    display: inline-block;
+    color: lightgreen;
+    text-decoration: underline;
+    }
+header span{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: x-large;
+}
+.main{
+    margin:0 auto;
+    width: 80%;
+}
+
+table{
+    margin: 20px auto;
+    border: 5px solid black;
+    border-collapse: collapse;
+    
+}
+th,td{
+    border: 3px solid blue;
+    padding: 5px;
+}
+th{
+    padding: 10px;
+    color: green;
+    font-size: larger;
+    background-color: lightblue;
+}
+
+
