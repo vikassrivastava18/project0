@@ -20,7 +20,7 @@ header h1{
     display: inline-block;
     color: lightgreen;
     text-decoration: underline;
-    font-size: calc(14px + 5vw);
+    font-size: calc(14px + 3vw);
     }
 header span{
     float: right;
