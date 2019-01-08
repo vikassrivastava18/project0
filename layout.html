@@ -1,22 +1,91 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Testing</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="static/style.css">
-		
-    </head>
+<head>
+	<title>Ok</title>
+    <style type="text/css">
+        #addRating{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #book_table{
+			width:80%;
+			margin-left:auto;
+			margin-right:auto;
+            display: flex;
+            justify-content: center;
+        }
+        #image{
+            flex: 1;
+        }
+        #table{
+            margin-left: 20%;
+            flex: 1;
+        }
+        img{
+            max-width: 200px;
+        }
+	table{
+    margin: 20px auto;
+    border: 5px solid black;
+    border-collapse: collapse;
+    
+}
+th,td{
+    border: 3px solid blue;
+    padding: 5px;
+}
+th{
+    padding: 10px;
+    color: green;
+    font-size: larger;
+    background-color: lightblue;
+}
 
-    <body>
-        <header>
-            <img src="static/book.jpg" width="100px" alt="Website Logo">
-            <h1>Reading Is Good</h1>
-            
-            <span><a href="">Login</a> &nbsp;<a href="registration.html">Register</a></span>
-           
-        </header>
         
-    </body>
+    </style>
+</head>
+<body>
+<div id="book_table">
+   
+    <div id="table">
+    <table>
+        <tr>
+            <th>ISBN</th>
+            <th>TITLE</th>
+            <th>AUTHOR</th>
+            <th>YEAR</th>
+            <th>Bookreads Ratings</th>
+            
+            <th>Our Rating</th>
+        </tr>
+        <tr>
+        <td>{{ isbn }}</td>
+        <td>{{ book.title }}</td>  
+        <td>{{ book.author }}</td>  
+        <td>{{ book.year }}</td> 
+        <td>{{ bookR }}</td>
+        <td>{{ averageR }}</td>
+        </tr>
+    </table>
+    </div>
+    <div id="image">
+        <img src= {{ img_src }} />
+    </div>
 	
+</div>
+	
+    <div id="addRating">
+	<h2 style="color:lightgreen">Your Review: {{ userR.user_reviews }} </h2>
+	<h2 style="color:lightgreen">Your Rating: {{ userR.user_ratings }} </h2>
+    <h1 id="ratingHeader">Add rating</h1>
+    <form action="{{ url_for('book', isbn=isbn) }}" method="POST">
+    <input type="text" name="userreview" placeholder="Write a review" required>
+    <input type="number" name="userrating" placeholder="Give a rating(0-5)" value=3 step=0.1 max=5 required> 
+    <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+
 </html>
