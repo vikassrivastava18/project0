@@ -1,118 +1,103 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>My Favorite Books</title>
-        <style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgrey;
+<head lang="en">
+	<meta charset="utf-8">
+	<title>checking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+body,html{
+    /*text-align: center;*/
+    background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 89px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+	font-family: sans-serif;
+    }
+
+header{
+	margin-top:0px;
+	width: 80%;
     text-align: center;
-    
+    margin-right:auto;
+    margin-left:auto;
+    border-bottom: 4px solid lightblue;
 }
-
-
-h1, h2, th{
+header img{
+    	position:relative;
+	top:0px;
+	margin-right: 10px;
+    }
+header h1{
+    /*font-size:150%;*/
+    display: inline-block;
+    color: lightgreen;
     text-decoration: underline;
+	font-size: calc(18px + 1.95vw);
+    }
+header span{
+    float: right;
+    margin-right: 10px;
+    font-size: large;
 }
-table{
-    margin: 20px auto;
-    border: 5px solid black;
-    border-collapse: collapse;
+nav{
 }
-th, td{
-   border: 2px solid black;
-   padding: 5px;
-}
-#readContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#readContainer > div{
-    width: 300px;
-    padding: 30px;
-    background-color: lightblue;
-    margin: 10px;
-}
+a{
+color:green;}
 
-#toReadContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #toReadContainer > div{
-      margin: 10px;
-      width: 300px;
-      padding:30px;
-      background-color: lightgreen;
-  }
-        </style>
-    </head>
+main{
+	margin-top:80px;
+}
+.main_h{
+	font-weight:bold;
+	font-size:large;
+}
+main img{
+	float:left;
+	margin:15px;
+	border: 5px solid lightblue;
+	
 
-    <body>
+}
+footer{
+	position: absolute;
+	bottom: 0px;
+	clear:both;
+	width: 100%;
+	padding:5px;
+	background-color: lightgreen;
+}
+p{
+	padding: 8px;
+}
+</style>
+<head>
+<body>
+	<header>
+           <h1><img src="static/book.jpg" width="100px" alt="Website Logo">Reading Is Good</h1>
+			
+	<nav>
+		<span><a href="index.html">HOME</a></span>
+		<span><a href="commerce.html">COMMERCE</a></span>
+		<span><a href="food.html">RECIPE</a></span>
+	</nav>		
             
-                       <a href="food.html" id="school">Recipe</a>
-                       <a href="index.html" id="college">Home</a>
-                       <a href="commerce.html" id="commerce">commerce</a>
-                   
-            
-        <h1>You are what you <strike>Eat</strike> Read!</h1>
- 
-       <h2>My Review for the Books I have read(not every page)</h2>
-       
-       <table>
-        <tr>
-           <th>Name</th>
-           <th>Subject</th>
-           <th>Review</th>
-        </tr>
+     </header>
 
-        <tr>
-            <td>Concept of physics</td>
-            <td>Physics Intermediate</td>
-            <td>Loved it ! It's engaging, friendly and addictive</td>
-            
-        </tr>
+	<main>
+		<p><img src="static/book_main.jpg" width="450"><span class="main_h">What is Lorem Ipsum?</span><br>
+<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<span class="main_h">Why do we use it?</span>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+</p>
+		
+	</main>
 
-         <tr>
-                <td>Electric machines</td>
-                <td>Electrical engineering</td>
-                <td>Great book, very well explained concepts</td>
-         </tr>
-         <tr>
-                <td>Gyana Yoga</td>
-                <td>Spiritual</td>
-                <td>Mind blowing, enlightening</td>
-         </tr>
-         <tr>
-                <td>Cosmos</td>
-                <td>Science</td>
-                <td>happy readinding, though not convinced all the claims are true</td>
-         </tr>
-         
-       </table>
-        <div id="readBooks">
-            <h2>Books Read(almost completed)</h2>
-         <div id="readContainer">
-             <div>Cosmos</div>
-             <div>Concept of physics</div>
-             <div>Makers of modern India(Guha)</div>
-             <div>Statistics</div>
-             <div>Raja Yoga</div>
-             <div>Gyana Yoga</div>
-         </div>   
-        </div>
+<footer>
+	Reading is always, good, understanding is better &amp;2019
+</footer>
 
-        <div id="toReadBooks">
-            <h2>Books To Read</h2>
-         <div id="toReadContainer">
-             <div>Flatland</div>
-             <div>Panchatantra</div>
-             <div>Analysis of electric machines</div>
-             <div>My experiment with the truth</div>
-             <div>Feynman Lecture of physics</div>
-             
-         </div>   
-        </div>
-    </body>
+</body>
+
 </html>
