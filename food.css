@@ -1,5 +1,14 @@
+
+  body {
+  
+    font-family: Halvetica, Arial, san-serif;
+    background-color: lightblue;
+  }
+  #top_header{
+	border: 5px solid;
+}
 #thirdDiv, #secondDiv, #firstDiv {
-    border: 8px solid orange;
+    border: 2px solid orange;
     background-color:lightgreen;
     padding: 10px;
   }
@@ -10,20 +19,24 @@
   #thirdDiv div p, #secondDiv div p, #firstDiv div p {
     font-size: 120%;
   }
-  #thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
+ h3 {
     margin-top: 0px;
+    text-decoration: underline;
   }
-  
-  body {
-    text-align: center;
-    font-family: Halvetica, Arial, san-serif;
-    background-color: lightblue;
-  }
-  
+ h2{
+    padding: 10px;
+    text-decoration: underline;
+     text-align:center;
+
+}
   h1 {
     padding: 5px;
     color: red;
-    background-color: lightgreen;
+    background-color: #fff;
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration:underline;
   }
   
   #firstDiv div div h3 {
@@ -37,3 +50,10 @@
   #thirdDiv div div h3 {
     color: green;
   }
+a{
+	font-size:larger;
+	padding: 5px;
+	color: green;
+	float: right;
+	text-decoration:underline;
+}
