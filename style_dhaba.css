@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    text-align: center;
+    
+}
+header{
+	background: 
+radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%),
+radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%),
+radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%),
+
+radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%) 50px 50px;
+background-color:#b03;
+background-size:100px 100px;
+    position: relative;
+    width: 100%;
+    border: 6px solid lightgreen;
+    background-repeat: repeat;
+	margin-top: 0px;
+}
+#header1{
+    position: absolute;
+    bottom: 8vh;
+    left: 8vw;
+    width: calc(85px + 2.7vw);
+    max-height: 90%; 
+}
+#header2{
+    position: absolute;
+    bottom: 8vh;
+    right: 8vw;
+    width: calc(70px + 2.7vw);
+    max-height: 50%; 
+}
+h1{
+    color: rgb(21, 216, 21);
+    font-size: calc(20px + 1.3vw);
+    line-height: 12vh;
+    text-decoration: underline;
+}
+nav{
+    background-color: lightblue;
+    min-height: 8vh;
+}
+nav > * {
+    display: inline;
+}
+nav button{
+    border-right: 4px solid white;
+}
+nav div img{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+ #menu{
+    position: relative;
+    display: inline-block;
+}
+#menuCont{
+    position: absolute;
+    background-color: aqua;
+    display: none;
+    min-width: 100%;
+    transition-duration: 2s; 
+    transition-timing-function: ease-in;
+    z-index: 900;
+}
+
+#menu:hover #menuCont{
+    display: block;
+    transition-duration: 2s; 
+    transition-timing-function: ease-in;
+}
+
+button{
+    padding-right: 10px;
+    font-size: calc(10px + 1.0vw);
+    background-color: aqua;
+    margin: 0px;
+    border: 0px;
+    line-height: 10vh;
+}
+main{
+	background-image: url(images/hotel.jpg);
+    height:40vh; 
+    background-color:orange;
+  } 
+    aside{
+	//background-image: url(images/images1.png);
+    height:40vh; 
+    background-color: blueviolet;
+ }
+@media screen and (max-width: 430px){
+    header{
+        position: relative;
+        }
+        h1{
+        position: absolute;
+        right: 0px;
+        line-height:15vh;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 700px){
+    #mainCont{
+      display: flex;
+      flex-flow: row-wrap;
+    }
+    main{
+        flex: 4;
+        height:70vh; 
+        background-color: blueviolet;
+    }
+    aside{
+        flex: 1;
+        height: 70vh;
+        background-color: rosybrown;
+    }
+}
+@media screen and (min-width: 700px){
+    #mainCont{
+        display: flex;
+        flex-flow: row-wrap;
+      }
+      main{
+          flex: 5;
+          height:70vh; 
+          background-color: orange;
+      }
+      aside{
+          flex: 1;
+          height: 70vh;
+          background-color: rosybrown;
+      }
+}
