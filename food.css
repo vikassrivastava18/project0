@@ -1,16 +1,18 @@
 
-  body {
   
+  body {
+    text-align: center;
     font-family: Halvetica, Arial, san-serif;
-    background-color: lightblue;
+    background-color: lightcoral;
+    
   }
-  #top_header{
-	border: 5px solid;
+  ol{
+ 	list-style-type:none;
 }
-#thirdDiv, #secondDiv, #firstDiv {
-    border: 2px solid orange;
-    background-color:lightgreen;
+  #thirdDiv, #secondDiv, #firstDiv {
+    border: 8px solid lightblue;
     padding: 10px;
+	background-color: white;
   }
   #thirdDiv div img, #secondDiv div img, #firstDiv div img {
     border: 4px solid white;
@@ -19,26 +21,25 @@
   #thirdDiv div p, #secondDiv div p, #firstDiv div p {
     font-size: 120%;
   }
- h3 {
+  #thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
     margin-top: 0px;
-    text-decoration: underline;
   }
- h2{
-    padding: 10px;
+  h1 {
+    /*text-shadow: 2px 2px 0 rgba(255,0,0,0.7) ; */
+    text-shadow: 2px 2px 2px rgba(255,0,0,0.7) ;
+    padding: 5px;
+    color: green;
+    background-color: white;
     text-decoration: underline;
-     text-align:center;
+    margin-top: 0px;
+   
+  }
+  header{
+	background-color:lightblue; 
+	
+}
 
 }
-  h1 {
-    padding: 5px;
-    color: red;
-    background-color: #fff;
-    text-align:center;
-    margin-top:0px;
-    margin-bottom:0px;
-    text-decoration:underline;
-  }
-  
   #firstDiv div div h3 {
     color: blue;
   }
@@ -50,10 +51,13 @@
   #thirdDiv div div h3 {
     color: green;
   }
-a{
-	font-size:larger;
-	padding: 5px;
-	color: green;
-	float: right;
-	text-decoration:underline;
+nav{
+	font-size: 1.2em;
+}
+nav a{
+	padding:8px;
+}
+footer{
+	padding: 10px;
+	background-color: lightblue;
 }
