@@ -1,133 +1,87 @@
-<html>
-<head lang="en">
-	<meta charset="utf-8">
-	<title>checking</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<style>
-body,html{
-    /*text-align: center;*/
-    background-color: #fff; 
-	background-image: 
-	linear-gradient(90deg, transparent 89px, #abced4 79px, #abced4 81px, transparent 81px),
-	linear-gradient(#eee .1em, transparent .1em);
-	background-size: 100% 1.2em;
-	font-family: sans-serif;
-    }
-
-header{
-	margin-top:0px;
-	width: 80%;
-    text-align: center;
-    margin-right:auto;
-    margin-left:auto;
-    border-bottom: 4px solid lightblue;
-	
-}
-header img{
-    	position:relative;
-	
-	margin-right: 10px;
-	border: 3px solid lightblue;
-    }
-header h1{
-    /*font-size:150%;*/
-    display: inline-block;
-    
-    text-decoration: underline;
-	font-size: calc(18px + 1.95vw);
-    }
-header span{
-    float: right;
-    position: relative;
-    bottom: 20px;
-    margin-right: 10px;
-    font-size: large;
-}
-nav{
-}
-
-
-main{
-	margin-top:80px;
-	width: 80%;
-	margin: 30 auto;
-	background-color: lightgrey;
-}
-
-main:hover{
-color:white;
-background-color:grey;}
-
-.main_h{
-	font-weight:bold;
-	font-size:large;
-}
-main p{
-	line-height: 2em;
-	column-gap: 2em;
-	column-width:25em;
-	column-rule: 2px double #999;
-
-}
-main img{
-	float:left;
-	margin-right:7em;
-	border: 3px solid lightblue;
-	border-radius:50%;
-	shape-outside: circle();
-}
-footer{
-	
-	clear:both;
-	width: 100%;
-	padding:15px;
-	background-color: lightgrey;
-}
-p{
-	padding: 8px;
-	margin:10px;
-}
-#img_right{
-	shape-outside: circle(99px at 195px 99px);
-	float: right;
-	margin-left:7em;
-	margin-right: 0px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<body>
-	<header>
-           <h1><img src="static/book_main.jpg" width="150px" alt="Website Logo">Reading Is Good</h1>
-			
-	<nav>
-		<span><a href="index.html">HOME</a></span>
-		<span><a href="commerce.html">COMMERCE</a></span>
-		<span><a href="food.html">RECIPE</a></span>
-	</nav>		
-            
-     </header>
+	<meta charset="utf-8">
+	<title>MY BLOG</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<main>
-		<p><img src="static/book.jpg" width="200"><span class="main_h">What is Lorem Ipsum?</span><br>
-<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<span class="main_h">Why do we use it?</span>
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-</p><hr>
+	<script type="text/javascript">
 
-	<p><span class="main_h">What is Lorem Ipsum?</span><br>
-<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<span class="main_h">Why do we use it?</span><img src="static/just-one-day-by-gayle-forman.jpg" width="200"  id="img_right">
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-</p>	
+var slideNum= 0; var slide;
+
+function imgSlide(){
+	slide= document.getElementById("slides");	
+	imgSlider= ["images/vivek1.jpg", "images/vivek3.jpg", "images/vivekananda.jpg", "images/rkm.gif"];
+    setInterval(changeImg, 2000);
+}
+
+function changeImg(){
+  slide.src= imgSlider[slideNum % imgSlider.length];
+  slideNum+= 1;
+}
+</script>
+	
+</head>
+<body onload="imgSlide()">
 
 
-		
-	</main>
+<header>
+	<h1>
+		MY WORLD
+	</h1>
+	<hr>
 
-<footer>
-	Reading is always, good, understanding is better &amp;2019
-</footer>
+	<a href="commerce.html" id="school">COMMERCE</a>
+	<a href="food.html" id="college">RECIPE</a>
+	<a href="books.html" id="advaita">BOOKS</a>
+	
+</header>
+<div class="mainCont"> 
+<main>
+	<img src="images/rkm.gif"  id="slides">
+</main>
+
+<aside>
+	
+
+<strong>Brahman</strong> is a Vedic Sanskrit word, and it is conceptualized in Hinduism, states Paul Deussen, as the "creative principle which lies realized in the whole world".[9] Brahman is a key concept found in the Vedas, and it is extensively discussed in the early Upanishads.[10] The Vedas conceptualize Brahman as the Cosmic Principle.[11] In the Upanishads, it has been variously described as Sat-cit-ānanda (truth-consciousness-bliss)[12][13] and as the unchanging, permanent, highest reality.[6][14][note 1][note 2]
+
+Brahman is discussed in Hindu texts with the concept of Atman (Soul, Self),[10][17] personal,[note 3] impersonal[note 4] or Para Brahman,[note 5] or in various combinations of these qualities depending on the philosophical school.[18] In dualistic schools of Hinduism such as the theistic Dvaita Vedanta, Brahman is different from Atman (soul) in each being.[5][19][20] In non-dual schools such as the Advaita Vedanta, Brahman is identical to the Atman, is everywhere and inside each living being, and there is connected spiritual oneness in all existence.[7][21][22]   
+</aside>
+</div>
+<div class="paraG">
+	<p>Vedic
+
+Brahman is a concept present in Vedic Samhitas, the oldest layer of the Vedas dated to the 2nd millennium BCE. For example,[27]
+
+    The Ṛcs are limited (parimita),
+    The Samans are limited,
+    And the Yajuses are limited,
+    But of the Word Brahman, there is no end.
+    — Taittiriya Samhita VII.3.1.4, Translated by Barbara Holdrege[27]
+
+The concept Brahman is referred to in hundreds of hymns in the Vedas.[28] For example, it is found in Rig veda hymns such as 2.2.10,[29] 6.21.8,[30] 10.72.2[31] and in Atharva veda hymns such as 6.122.5, 10.1.12, and 14.1.131.[28] The concept is found in various layers of the Vedic literature; for example:[28] Aitareya Brahmana 1.18.3, Kausitaki Brahmana 6.12, Satapatha Brahmana 13.5.2.5, Taittiriya Brahmana 2.8.8.10, Jaiminiya Brahmana 1.129, Taittiriya Aranyaka 4.4.1 through 5.4.1, Vajasaneyi Samhita 22.4 through 23.25, Maitrayani Samhita 3.12.1:16.2 through 4.9.2:122.15. The concept is extensively discussed in the Upanishads embedded in the Vedas (see next section), and also mentioned in the vedāṅga (the limbs of Vedas) such as the Srauta sutra 1.12.12 and Paraskara Gryhasutra 3.2.10 through 3.4.5.[28]
+
+Jan Gonda states that the diverse reference of Brahman in the Vedic literature, starting with Rigveda Samhitas, convey "different senses or different shades of meaning".[32] There is no one single word in modern Western languages that can render the various shades of meaning of the word Brahman in the Vedic literature, according to Jan Gonda.[32] In verses considered as the most ancient, the Vedic idea of Brahman is the "power immanent in the sound, words, verses and formulas of Vedas". However, states Gonda, the verses suggest that this ancient meaning was never the only meaning, and the concept evolved and expanded in ancient India.[33]
+
+Barbara Holdrege states that the concept Brahman is discussed in the Vedas along four major themes: as the Word or verses (Sabdabrahman),[34] as Knowledge embodied in Creator Principle, as Creation itself, and a Corpus of traditions.[35] Hananya Goodman states that the Vedas conceptualize Brahman as the Cosmic Principles underlying all that exists.[11] Gavin Flood states that the Vedic era witnessed a process of abstraction, where the concept of Brahman evolved and expanded from the power of sound, words and rituals to the "essence of the universe", the "deeper foundation of all phenomena", the "essence of the self (Atman, soul)", and the deeper "truth of a person beyond apparent difference".[36]
+Upanishads
+Swan (Hansa, हंस) is the symbol for Brahman-Atman in Hindu iconography.[37][38]
+
+The primary focus on the early Upanishads is Brahmavidya and Atmavidya, that is the knowledge of Brahman and the knowledge of Atman (self, soul), what it is and how it is understood.[39] The texts do not present a single unified theory, rather they present a variety of themes with multiple possible interpretations, which flowered in post-Vedic era as premises for the diverse schools of Hinduism.[10]
+
+Paul Deussen states that the concept of Brahman in the Upanishads expands to metaphysical, ontological and soteriological themes, such as it being the "primordial reality that creates, maintains and withdraws within it the universe",[40] the "principle of the world",[40] the "absolute",[41] the "general, universal",[42] the "cosmic principle",[43] the "ultimate that is the cause of everything including all gods",[44] the "divine being, Lord, distinct God, or God within oneself",[45] the "knowledge",[46] the "soul, sense of self of each human being that is fearless, luminuous, exalted and blissful",[47] the "essence of liberation, of spiritual freedom",[48] the "universe within each living being and the universe outside",[47] the "essence and everything innate in all that exists inside, outside and everywhere".[49]
+
+Gavin Flood summarizes the concept of Brahman in the Upanishads to be the "essence, the smallest particle of the cosmos and the infinite universe", the "essence of all things which cannot be seen, though it can be experienced", the "self, soul within each person, each being", the "truth", the "reality", the "absolute", the "bliss" (ananda).[36]
+
+According to Radhakrishnan, the sages of the Upanishads teach Brahman as the ultimate essence of material phenomena that cannot be seen or heard, but whose nature can be known through the development of self-knowledge (atma jnana).[50]
+
+The Upanishads contain several mahā-vākyas or "Great Sayings" on the concept of Brahman:[51]</p>
+</div>
 
 </body>
+
 
 </html>
