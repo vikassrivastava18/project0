@@ -100,3 +100,7 @@ main{
 	text-align: center;
 }	
 }
+footer{
+	padding: 8px;
+	background-color: lightblue;
+}
