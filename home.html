@@ -17,10 +17,11 @@
     margin-top:0px;
     margin-bottom:0px;
     text-align: center;
-    
+    padding-bottom: 15px;
     background-color: #900f0fbd;;
     color: white;
     text-decoration:underline;
+    font-size: calc(14px + 2vw);
   }
   header img{
 	width:60px;
@@ -64,7 +65,7 @@
     background-color:#900f0fbd;;
   }
 a{
-  color:green;
+  color: lightblue;
   padding:8px;
   font-size:large;
 }
@@ -94,6 +95,16 @@ aside img{
 	margin-right: 1.2em;
 }
 
+@media screen and (max-width:800px){
+
+	main section, main aside{
+	width: 100%;
+}
+	main section img{
+	width: 200px;
+}
+}
+
   </style>
 </head>
 <body>
@@ -101,9 +112,10 @@ aside img{
 <h1><img src="images/home1.png">HOME SWEET HOME<img src="images/home1.png"></h1>
 </header>
 <nav>
-<span><a href="about.html">ABOUT</a></span>
-<span><a href="contact.html">CONTACT</a></span>
-<span><a href="address.html">ADDRESS</a></span>
+<span><a href="home.html">HOME</a></span>
+<span><a href="food.html">RECIPE</a></span>
+<span><a href="books.html">BOOKS</a></span>
+<span><a href="commerce.html">COMMERCE</a></span>
 </nav>
 <main>
   <section>
