@@ -1,135 +1,158 @@
-
+html{
+	background-color: #218b8f; 
+}
 
 body{
 	position: relative;
 	width:80%;
-	text-align: center;
 	margin: auto;
 	margin-top: 5vh;
-	margin-bottom: 10vh;
-	background-image: 
-	linear-gradient(90deg, transparent 89px, #abced4 79px, #abced4 81px, transparent 81px),
-	linear-gradient(#eee .1em, transparent .1em);
-	background-size: 100% 1.2em;
-    background-size: 100% 1.2em;
+	margin-bottom: 5vh;
 	
 }
 
 header{
 	margin-top: 0px;
-	height: 25vh;
 	position: relative;
 	width:100%;
-	background-color: lightblue;
-	background-image: url("images/back.png");
-	background-repeat: repeat;
-
+	
 }
 h1{
-	font-family: serif;
-	color: green;
-	margin-top: 0px;
 
-	font-size: calc(14px + 5vw);
+	margin-top: 0px;
+	text-decoration: underline;
+	font-size: calc(20px + 3vw);
 	text-align: center;
 
 }
+header h2{
+	text-decoration: underline;
+	font-size: calc(5px + 2vw);
+	text-align: center;
+}
+
+main{
+	color: lightblue;
+	line-height: 1.3em;
+        margin-left: 0px;
+        text-align:center;
+	font-size: 1.2em;
+       	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+article h2{
+	padding-left: 10px;
+	text-decoration: underline;
+	font-size: calc(5px + 2vw);
+}
+aside{
+	border: 2px solid black;
+}
+p{
+	padding-left: 30px;
+}
+
+#v{	
+	
+	-webkit-clip-path: polygon(53% 39%, 100% 1%, 51% 100%, 51% 100%, 0 0);
+	clip-path: polygon(53% 39%, 100% 1%, 51% 100%, 51% 100%, 0 0);
+}
+#i{
+	
+	-webkit-clip-path: polygon(45% 7%, 0 3%, 0 0, 100% 0, 55% 7%, 57% 84%, 100% 85%, 58% 84%, 96% 100%, 15% 	100%, 38% 85%, 43% 84%);
+	clip-path: polygon(45% 7%, 0 3%, 0 0, 100% 0, 55% 7%, 57% 84%, 100% 85%, 58% 84%, 96% 100%, 15% 100%, 	38% 85%, 43% 84%);
+	}
+#k{	
+	
+	-webkit-clip-path: polygon(50% 0, 24% 0, 24% 50%, 22% 99%, 50% 98%, 50% 70%, 80% 100%, 100% 80%, 70% 	50%, 100% 20%, 80% 0%, 50% 30%);
+	clip-path: polygon(50% 0, 24% 0, 24% 50%, 22% 99%, 50% 98%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 	20%, 80% 0%, 50% 30%);
+}
+
+#a{
+	width: 140px;
+	-webkit-clip-path: polygon(44% 0, 48% 0, 98% 97%, 59% 40%, 36% 41%, 0 98%);
+	clip-path: polygon(44% 0, 48% 0, 98% 97%, 59% 40%, 36% 41%, 0 98%);
+}
+
+#s{
+	
+	-webkit-clip-path: polygon(16% 50%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 27% 14%, 27% 48%, 85% 77%, 85% 	100%, 15% 100%, 15% 85%, 63% 80%);
+	clip-path: polygon(16% 50%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 27% 14%, 27% 48%, 85% 77%, 85% 100%, 15% 	100%, 15% 85%, 63% 80%);
+}
 
 a{
-	font-size: calc(10px + 2vw);
+	 overflow-wrap: break-word;
+	 word-wrap: break-word;
 }
-#school{
-	position: absolute;
-	left:12%;
-	bottom: 25%;
-}
-#advaita{
-	position: absolute;;
-	left: 50%;
-    bottom: 5%;
-}
-
-#college{
-	position: absolute;;
-	right: 20%;
-	bottom: 25%;
-}
-
-#family{
-	position: absolute;;
-	left: 30%;
-	bottom: 15%;
-}
-aside{
-	line-height: 2em;
-	background-color: orange;
-}
-
-.paraG{
-	padding: 15px;
-	border: 1px solid;
-	margin-top: 10px;
-}
-@media screen and (min-width: 800px){
-.mainCont{
-	position: relative;
-	display: flex;
-	flex-flow: row-wrap;
-    	height:47vh;
-}
-main{
-	
-	margin-left: 0px;
+footer{
+	float: right;
+	font-size: 1.6em;
+	color:white;}
+@media screen and (min-width: 1280px){
+    .mainCont{
+        position: relative;
+        display: flex;
+        flex-flow: row-wrap;
+        /*background-color: orange;*/
+        height:47vh;
+    }
+    main{
+        
 	flex: 5;
+    }
+    main img{
+        width: 100px;
 	
-}
-main img{
-	width: 100%;
-	max-height:100%;
-}
+   }
 
-aside{
-	flex: 2;
-	max-height: 100%;
-	overflow-y: scroll;
-	line-height: 2em;
+    
+    aside{
+        flex: 2;
+        max-height: 100%;
+        padding:10px;
+    }
 }
-  }
   
-  main{
+@media screen and (min-width: 800px) and (max-width:1279px){
+	.mainCont{
+        position: relative;
+        display: flex;
+        flex-flow: row-wrap;
+        /*background-color: orange;*/
+        height:47vh;
+    }
+    main{
+        
+	flex: 5;
+    }
+    main img{
+        width: 65px;
 	
-	  margin-left: 0px;
-	  /*width: 100%; */
-	  height: 47vh;
-  }
-  main img{
-	  /*width: 100%; */
-	  height: 47vh;
-  }
+   }
 
-@media screen and (max-width: 768px) {
-
- body{
-	width:100%; 
-	}
- header{
-	margin-top:-20px;
+    
+    aside{
+        flex: 2;
+        max-height: 100%;
+        padding:10px;
+    }
 }
-main img{
+  
+ @media screen and (max-width: 799px) {
+  
+  main, aside{
 	width: 100%;
 }
-} 
+  main img, #a{
+      width: 60px;
+
+  }
+}
 
 
-.paraG{
-	max-width: 100%;
-	overflow-x: scroll;
-}
-.paraG p{
-	line-height: 2em;
-	column-gap: 2em;
-	column-width:18em;
-	column-rule: thin dotted #999;
-	max-height: 60vh;
-	
-}
