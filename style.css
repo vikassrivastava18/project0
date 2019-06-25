@@ -27,7 +27,7 @@ header{
 	position: relative;
 	width:100%;
 	background-color:#c17575;
-	
+	clip-path: polygon(0px 0px, 100% 0px, 100% 30%, 100.27% 102.93%, 84.24% 64.96%, 50.14% 100.48%, 30.58% 68.63%, 0px 83%);
 }
 h1{
 	
