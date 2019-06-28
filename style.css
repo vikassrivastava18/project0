@@ -166,7 +166,10 @@ footer{
 }
   
 @media screen and (min-width: 800px) and (max-width:1279px){
-	header{
+	body{ 
+          width: 100%;
+         }
+        header{
 		padding: 20px;
 	}
 	header img{
