@@ -1,63 +1,126 @@
 
   
   body {
-    text-align: center;
-    font-family: Halvetica, Arial, san-serif;
-    background-color: #4c1717;
     
+    font-family: Halvetica, Arial, san-serif;
+  }
+  h1, nav{
+	text-align:center;
   }
   ol{
  	list-style-type:none;
 }
+
+main{
+	width:80%;
+	margin: 0 auto;
+	padding:40px;
+	background-color:#ef4978;
+
+
+}
+#main_section{
+   
+   padding:20px;
+   margin: 20px;
+   margin-top:10px;
+}
+ aside{
+   
+    padding:8px;
+    background-color: #74d3edbf;
+    margin:22px;
+    margin-right:0px;
+   
+}
+section h2{
+ margin-left: 20px;
+ text-decoration: underline;
+}
+aside h2{
+    text-align:center;
+    color:#fff;
+    text-decoration:underline;
+}
+
+ .container{
+	padding:20px;
+}
+
+p{
+  font-weight: bold;
+  font-size: 20px;
+  padding:20px;
+}
+ #first_m, #second_m, #third_m {
+   background-color: lightgreen;
+   font-weight: 120%;
+   opacity: 0.75;
+   padding:15px;
+}
+
+  #containerx{
+	width:65%;
+	margin: 0 auto;
+}
   #thirdDiv, #secondDiv, #firstDiv {
-    border: 8px solid lightblue;
-    padding: 10px;
-	background-color: white;
+    padding:15px;
+    margin:15px;
+    background-color: white;
+    border: 5px solid #fff;
+    
   }
   #thirdDiv div img, #secondDiv div img, #firstDiv div img {
-    border: 4px solid white;
-    border-radius: 3px;
+    width: 303px;
+    border: 4px solid lightblue;
+    border-radius: 50%;
   }
-  #thirdDiv div p, #secondDiv div p, #firstDiv div p {
-    font-size: 120%;
-  }
+
   #thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
     margin-top: 0px;
   }
+  #firstDiv{
+   background:url(images/paneer_bcg.jpg) no-repeat;
+   background-position: center;
+} 
+    #secondDiv{
+   background:url(images/dosa_bcg.jpg) no-repeat;
+   background-position: center;
+}
   h1 {
     /*text-shadow: 2px 2px 0 rgba(255,0,0,0.7) ; */
-    text-shadow: 2px 2px 2px rgba(255,0,0,0.7) ;
-    padding: 5px;
+3    text-shadow: 2px 2px 2px rgba(255,0,0,0.3) ;
+    
     color: green;
     background-color: white;
     text-decoration: underline;
     margin-top: 0px;
    
   }
-  header{
-	background-color:lightblue; 
+
+
+  main h3{
+	text-decoration:underline;
+	padding: 12px;
 	
 }
+  
 
-}
-  #firstDiv div div h3 {
-    color: blue;
-  }
-  
-  #secondDiv div div h3 {
-    color: red;
-  }
-  
-  #thirdDiv div div h3 {
-    color: green;
-  }
+ 
 nav{
+	padding: 8px;
 	font-size: 1.2em;
-}
+	background: linear-gradient(90deg, #fff 0%, #f560b4  48.7%, #fff 100%);
+	}
 nav a{
 	padding:8px;
+	color:#fff;
+	padding-right:100px;
 }
 footer{
+	background-color:lightgrey;
+	margin-top: 10px;
 	padding: 10px;
-	background-color: lightblue;
+	
+}
 }

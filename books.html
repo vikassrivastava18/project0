@@ -6,57 +6,77 @@
 <style>
 body,html{
     /*text-align: center;*/
-    background-color: #fff; 
+        background-color: #fff; 
 	background-image: 
 	linear-gradient(90deg, transparent 89px, #abced4 79px, #abced4 81px, transparent 81px),
 	linear-gradient(#eee .1em, transparent .1em);
 	background-size: 100% 1.2em;
-	font-family: sans-serif;
+	font-family: Avenir;
     }
 
 header{
-	margin-top:0px;
-	width: 80%;
-    text-align: center;
-    margin-right:auto;
-    margin-left:auto;
-    border-bottom: 4px solid lightblue;
-	
+    margin-top:0px;
+    border-bottom-color: #bfbfbf;
+    border-bottom-style: double;
+    border-bottom-width: 6px;
+    padding:13px;	
 }
-header img{
-    	position:relative;
-	
-	margin-right: 10px;
-	border: 3px solid lightblue;
-    }
+
+
+#headerTitle{
+   width:70%;
+   margin: 0 auto;
+   display: flex; 
+}
+
+#headerImg{
+  flex:1;
+  
+}
+#headerImg img{
+  border: 5px solid;
+}
+#headerText{
+  flex:4;
+  align-self: flex-end;
+  text-decoration:underline;
+}
+
 header h1{
     /*font-size:150%;*/
     display: inline-block;
-    
     text-decoration: underline;
-	font-size: calc(18px + 1.95vw);
+    font-size: calc(18px + 2.25vw);
+    vertical-align: text-bottom;
     }
-header span{
-    float: right;
-    position: relative;
-    bottom: 20px;
-    margin-right: 10px;
-    font-size: large;
+
+#headerText{
+    font-size: calc(28px + 2.8vw);
+    
 }
+
 nav{
+   margin-right: 150px;
+   margin-bottom: 20px;
+   
+}
+nav a{
+	float: right;
+	color: #425c72;
+	padding:8px;
+	font-size:1.2em;
+	background-color: #cae7e3;
+	text-decoration: underline;
 }
 
 
 main{
-	margin-top:80px;
-	width: 80%;
-	margin: 30 auto;
+	width: 85%;
+	margin: 50 auto;
 	background-color: lightgrey;
+	border:3px solid burlywood;
 }
 
-main:hover{
-color:white;
-background-color:grey;}
 
 .main_h{
 	font-weight:bold;
@@ -67,14 +87,18 @@ main p{
 	column-gap: 2em;
 	column-width:25em;
 	column-rule: 2px double #999;
-
+	font-family: Avenir;
 }
 main img{
+	width:150px;
 	float:left;
-	margin-right:7em;
+	margin:0.6em;
 	border: 3px solid lightblue;
-	border-radius:50%;
-	shape-outside: circle();
+}
+
+#main_img_top{
+	position:relative;
+	top:10px;
 }
 footer{
 	
@@ -84,31 +108,28 @@ footer{
 	background-color: lightgrey;
 }
 p{
-	padding: 8px;
+	padding: 15px;
 	margin:10px;
 }
-#img_right{
-	shape-outside: circle(99px at 195px 99px);
-	float: right;
-	margin-left:7em;
-	margin-right: 0px;
-}
+
 </style>
 <head>
 <body>
 	<header>
-           <h1><img src="static/book_main.jpg" width="150px" alt="Website Logo">Reading Is Good</h1>
-			
-	<nav>
-		<span><a href="index.html">HOME</a></span>
-		<span><a href="food.html">RECIPE</a></span>
-		<span><a href="commerce.html">COMMERCE</a></span>
-	</nav>		
+	<div id="headerTitle">
+           <div id="headerImg"><img src="static/book.jpg" width="140px" alt="Website Logo"></div>
+	   <div id="headerText"><span id="headerText">Reading Is Good</span></div>
+	<div>		
+		
             
      </header>
-
+	<nav>
+		<a href="index.html">HOME</a>
+		<a href="food.html">RECIPE</a>
+		<a href="commerce.html">COMMERCE</a>
+	</nav>	
 	<main>
-		<p><img src="static/book.jpg" width="200"><span class="main_h">What is Lorem Ipsum?</span><br>
+		<p><img src="static/main_img.jpg" id="main_img_top"><span class="main_h">What is Lorem Ipsum?</span><br>
 <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 <span class="main_h">Why do we use it?</span>
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -116,7 +137,7 @@ It is a long established fact that a reader will be distracted by the readable c
 
 	<p><span class="main_h">What is Lorem Ipsum?</span><br>
 <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<span class="main_h">Why do we use it?</span><img src="static/just-one-day-by-gayle-forman.jpg" width="200"  id="img_right">
+<span class="main_h">Why do we use it?</span><img src="static/just-one-day-by-gayle-forman.jpg" id="img_right">
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 </p>	
 

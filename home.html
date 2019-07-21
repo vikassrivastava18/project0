@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>Home Page</title>
   <style>
   body{
 	margin:0px;
 	font-family:Arial, Helvetica, sans-serif;
-	 
+	background-color:#fffa9b;
 	}
   header{
+	
+	width:70%;
+	margin: 0 auto;
 	margin-top:0px;
+	clip-path: polygon(50% 0%, 100% 31%, 80.1% 31.87%, 78.55% 77%, 19.45% 79.26%, 18% 29.68%, 0px 34%);
   }
   header h1{
     margin-top:0px;
     margin-bottom:0px;
     text-align: center;
-    padding-bottom: 15px;
-    background-color: #900f0fbd;;
+    padding: 25px;
+    background-color:#2980b9;;
     color: white;
     text-decoration:underline;
     font-size: calc(14px + 2vw);
@@ -30,44 +35,60 @@
 	margin-right:30px;
 	margin-left:30px;
 }
-  main{
-	background-color:lightgreen;
-	
-  }
+  
   nav{
-	padding:10px;
+	width:30%;
+	padding:4px;
+	padding-right: 14px;
 	text-align: center;
+	border: 2px solid lightgreen;
+        background-color:#ecbfbf;
+	
 }
-  section{min-height: 300px;
+  section{
+    min-height: 300px;
     float: left;
-    width: 70%;
-    background-color: lightgreen;
+    width: 78%;
+    font-size:large;
+    line-height:1.2em;
+    margin:10px;
+    border: 2px solid;
+    background-color:#ecbfbf;
+   
   }
-  aside{min-height: 300px;
+  aside{
+    height:400px;
+    overflow-y:scroll;
     color: white;    
     padding:10px;
     float: right;
-    width: 25%;
-    background-color: lightblue;
+    width: 20%;
+    background-color: #74cb74;
+    border: 2px solid #616e9c;
+    border-top-left-radius: 105px;
   }
   main section img{
-    width: 300px;
+    width: 250px;
     float:left;
     margin:5px;
     
   }
    footer{
+    color: #fff;
     clear: both;
     position: relative;
     top: 10px;
     padding:15px;
     width: 100%;
-    background-color:#900f0fbd;;
+    background-color:#2980b9;
   }
 a{
-  color: lightblue;
-  padding:8px;
+  border-right: 1px solid;
+  padding:3px;
   font-size:large;
+}
+a:last-child{
+  border-right: 0px;
 }
 
 main section img{
@@ -78,13 +99,22 @@ clip-path: polygon(50% 0%, 100% 38%, 96% 100%, 5% 99%, 0% 38%);
   
 }
 
+.main_text{
+	padding: 6px;
+	line-height: 1.6em;
+}
 section h2, aside h2{
 	text-align: center;
-	color: red;
+	color: #bd4242;
 	text-decoration: underline;
 }
 section span, aside{
 	line-height: 1.5em;
+}
+article{
+    column-gap: 2em;
+    column-width:25em;
+    column-rule:2px solid;
 }
 
 aside img{
@@ -109,18 +139,19 @@ aside img{
 </head>
 <body>
 <header>
-<h1><img src="images/home1.png">HOME SWEET HOME<img src="images/home1.png"></h1>
+<h1>HOME SWEET HOME</h1>
 </header>
 <nav>
-<span><a href="home.html">HOME</a></span>
-<span><a href="food.html">RECIPE</a></span>
-<span><a href="books.html">BOOKS</a></span>
-<span><a href="commerce.html">COMMERCE</a></span>
+<a href="home.html">HOME</a>
+<a href="food.html">RECIPE</a>
+<a href="books.html">BOOKS</a>
+<a href="commerce.html">COMMERCE</a>
 </nav>
 <main>
   <section>
     <h2>PARADISE HOUSE</h2>
-    <img src="images/istockphoto-856794670-612x612.jpg" alt="So cute!!"><span class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit quae veritatis, libero dolor maxime nulla. Quibusdam adipisci molestiae omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <article>
+    <img src="images/istockphoto-856794670-612x612.jpg" alt="So cute!!"><p class="main_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit quae veritatis, libero dolor maxime nulla. Quibusdam adipisci molestiae omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -132,17 +163,13 @@ aside img{
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, vel!.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, vel! </span>
+     </p>
+    </article>
   </section>
   <aside>
    <h2>ABOUT US</h2>
     
-    <img src="images/w300x200.jpg" width="150px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <img src="images/w300x200.jpg" width="120px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -152,7 +179,7 @@ aside img{
 
   </aside>
 </main>
-  <footer>updated 2018;
+  <footer>Updated 2018;
   </footer>
 </body>
   

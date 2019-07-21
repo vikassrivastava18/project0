@@ -7,56 +7,57 @@ header{
   position: relative;
   margin-top: -20px;
   width:100vw;
-  background-color: lightblue;
-}
-
-#imageLogo{
-	position: absolute;
-	left: 14%;
-	top:30%;
-	height: 70%;
-	width: calc(45px + 1.1vw); 
-}
-
-#imageLogo img{
-  max-width:100%;
-  max-height: 100%; 
-}
-h1{ 
-	font-size: calc(16px + 1.0vw); 
-	color: red;
-	text-decoration: underline;
-	text-align: center;
-	line-height:12vh; 
-	font-family: serif;
-    	padding: 5px;
-   	
+  
+  margin-bottom:5px;
+  background-color:#ff5858;
 }
 #firstL{
-	color: orange;
-	padding:8px;
-	background-color: lightgreen;
+
+
+}
+#header_img{
+  width: calc(55px + 1.6vw); 
+  border:5px solid lightblue;
+  border-radius: 50%; 
+  vertical-align:center;
+}
+	
+
+h1{ 
+	font-size: calc(20px + 1.4vw); 
+	color: #fff;
 	text-decoration: underline;
+	padding:10px;
+	line-height:6vh; 
+	font-family: serif;
+    	padding: 20px;
+   	
 }
 
 
+#mainImages{
+	margin-left:3%;
+}
 
 main div img{
 	width:32%;
-	height:calc(20px + 16vw);
+	height:calc(24px + 12vw);
 }
 p{
-	padding: 5px;
+	padding: 12px;
 	font-size: calc(14px + 0.5vw);
 }
 nav{
 	
 	padding: 5px;	
+	background:linear-gradient(0deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
+
 }
-nav h3{
+nav h3{	
+	width: 200px;
 	margin-top:0px;
 	padding:8px;
-	background-color: lightgreen;
+	text-decoration: underline;
 }
 nav ul{
 	padding: 0px;
@@ -64,21 +65,32 @@ nav ul{
 	
 }
 nav ul li{
-    font-size: calc(10px + 0.5vw);
+    	font-size: calc(10px + 0.5vw);
 	font-weight: bolder;
 	list-style-type: none;
 	display:inline;
-	padding: 20px;
+	padding: 15px;
+	border-bottom: 2px solid;
+	
 }
 @media screen and (min-width: 600px){
-	#mainContent{
-	display: flex;
-	flex-direction: row;
+
+#header_img{
+  position:relative;
+  right: 50px;}
+#mainContent{
+display: flex;
+flex-direction: row;
+}
+h1{
+  text-align: center;
+  padding: 5px;
 }
 nav{
 	flex:1;
 	text-overflow: scroll;
 	margin-bottom: 10px;
+	border:3px solid;
 }
 nav ul{
 	padding: 0px;
@@ -86,21 +98,31 @@ nav ul{
 	
 }
 nav ul li{
-    font-size: calc(15px + 0.5vw);
+        font-size: calc(15px + 0.5vw);
 	font-weight: bolder;
 	list-style-type: none;
 	padding: 20px;
-	text-decoration:underline;
-	
+	text-decoration:capitalize;
+	display:block;
 	
 }
+
 main{
 	flex:8;
-	background-color: blanchedalmond;
-	text-align: center;
+	background-color: #95dbc5;
+	min-height:80vh;
 }	
 }
-footer{
-	padding: 8px;
-	background-color: lightblue;
+@media screen and (max-width: 599px){
+	#header_img{
+ 	float: right;
+	margin-bottom: 15px;
+}
+}
+footer{	
+	clear:both;
+	padding: 14px;
+	border-top: 2px solid;
+	background-color:#ff5858;
+	color:white;
 }
