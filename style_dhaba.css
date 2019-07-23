@@ -1,9 +1,9 @@
 body{
     margin: 0px;
-    text-align: center;
     
 }
 header{
+	text-align:center;
 	background: 
 radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
 radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
@@ -31,11 +31,9 @@ background-size:100px 100px;
     max-height: 90%; 
 }
 #header2{
-    position: absolute;
-    bottom: 8vh;
-    right: 8vw;
-    width: calc(70px + 2.7vw);
-    max-height: 50%; 
+    width: calc(70px + 1.9vw);
+    float:right;
+    margin-right:100px;
 }
 h1{
     color: rgb(21, 216, 21);
@@ -47,15 +45,17 @@ h1{
     padding: 7px;
 }
 nav{
-    padding:5px;
+    padding:6px;
+    background-color:lightblue;
 }
 nav > * {
     display: inline;
 }
 nav a{
-    border-right: 4px solid white;
-    padding: 10px;
-    padding-right: 20px;
+    float:left;
+    border-right: 1px solid;
+    padding:4px;
+    margin-right: 20px;
 }
 nav div img{
     transform: rotate(-180deg);
@@ -104,7 +104,7 @@ main{
 
   } 
 aside{
-   border: 5px solid;
+  
     
    
  }
@@ -155,10 +155,10 @@ footer{
         flex-flow: row-wrap;
       }
       main{
-          flex: 9;
+          flex: 8;
           height:70vh; 
           background-color: orange;
-	  border:8px solid;
+	  border:5px solid;
       }
       aside{
           flex: 2;

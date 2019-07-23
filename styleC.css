@@ -1,16 +1,15 @@
 html,body{
    margin: 0px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Avenir;
 }
 
 header{
   position: relative;
   margin-top: -20px;
   width:100vw;
-  
-  margin-bottom:5px;
-  background-color:#ff5858;
-}
+  background:linear-gradient(90deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
+  border-bottom:3px solid;
+ }
 #firstL{
 
 
@@ -25,7 +24,6 @@ header{
 
 h1{ 
 	font-size: calc(20px + 1.4vw); 
-	color: #fff;
 	text-decoration: underline;
 	padding:10px;
 	line-height:6vh; 
@@ -36,6 +34,7 @@ h1{
 
 
 #mainImages{
+	
 	margin-left:3%;
 }
 
@@ -48,16 +47,17 @@ p{
 	font-size: calc(14px + 0.5vw);
 }
 nav{
-	
+	margin-right:15px;
 	padding: 5px;	
-	background:linear-gradient(0deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
-
+	padding-left:15px;
+	background-color:#fe4e4e;
 }
 nav h3{	
 	width: 200px;
 	margin-top:0px;
 	padding:8px;
 	text-decoration: underline;
+	color:#fff;
 }
 nav ul{
 	padding: 0px;
@@ -90,7 +90,8 @@ nav{
 	flex:1;
 	text-overflow: scroll;
 	margin-bottom: 10px;
-	border:3px solid;
+	border-right:1px solid;
+	
 }
 nav ul{
 	padding: 0px;
@@ -123,6 +124,6 @@ footer{
 	clear:both;
 	padding: 14px;
 	border-top: 2px solid;
-	background-color:#ff5858;
-	color:white;
+	background:linear-gradient(90deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
+	
 }
