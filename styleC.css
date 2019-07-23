@@ -6,9 +6,10 @@ html,body{
 header{
   position: relative;
   margin-top: -20px;
-  width:100vw;
-  background:linear-gradient(90deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
-  border-bottom:3px solid;
+  width:80vw;
+  margin:0 auto;
+  margin-bottom:20px;
+  border-bottom:2px solid;
  }
 #firstL{
 
@@ -47,10 +48,10 @@ p{
 	font-size: calc(14px + 0.5vw);
 }
 nav{
-	margin-right:15px;
+	margin-left:50px;
 	padding: 5px;	
 	padding-left:15px;
-	background-color:#fe4e4e;
+	background-color:#ffbaba;
 }
 nav h3{	
 	width: 200px;
@@ -89,7 +90,6 @@ h1{
 nav{
 	flex:1;
 	text-overflow: scroll;
-	margin-bottom: 10px;
 	border-right:1px solid;
 	
 }
@@ -111,7 +111,8 @@ nav ul li{
 main{
 	flex:8;
 	background-color: #95dbc5;
-	min-height:80vh;
+	min-height:70vh;
+	margin-right:50px;
 }	
 }
 @media screen and (max-width: 599px){
@@ -124,6 +125,7 @@ footer{
 	clear:both;
 	padding: 14px;
 	border-top: 2px solid;
-	background:linear-gradient(90deg, #fff 0%, #cbe4ea 48.7%, #fff 100%);
+	background-color:#000;
+	color:#fff;
 	
 }
