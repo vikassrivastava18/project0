@@ -6,7 +6,7 @@ html,body{
 header{
   position: relative;
   margin-top: -20px;
-  width:80vw;
+  width:70vw;
   margin:0 auto;
   margin-bottom:20px;
   border-bottom:2px solid;
@@ -45,16 +45,15 @@ main div img{
 }
 p{
 	padding: 12px;
-	font-size: calc(14px + 0.5vw);
+	font-size: calc(10px + 0.5vw);
 }
 nav{
 	margin-left:50px;
-	padding: 5px;	
-	padding-left:15px;
+	padding: 10px;	
 	background-color:#ffbaba;
 }
 nav h3{	
-	width: 200px;
+	
 	margin-top:0px;
 	padding:8px;
 	text-decoration: underline;
@@ -91,7 +90,7 @@ nav{
 	flex:1;
 	text-overflow: scroll;
 	border-right:1px solid;
-	
+	text-align:center;
 }
 nav ul{
 	padding: 0px;
@@ -102,14 +101,14 @@ nav ul li{
         font-size: calc(15px + 0.5vw);
 	font-weight: bolder;
 	list-style-type: none;
-	padding: 20px;
+	padding: 5px;
 	text-decoration:capitalize;
 	display:block;
 	
 }
 
 main{
-	flex:8;
+	flex:12;
 	background-color: #95dbc5;
 	min-height:70vh;
 	margin-right:50px;
