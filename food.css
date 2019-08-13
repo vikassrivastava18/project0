@@ -108,7 +108,7 @@ aside h2{
 
 p{
   font-weight: bold;
-  font-size: 20px;
+  font-size: calc(10px + 1vw);
   padding:20px;
 }
 
