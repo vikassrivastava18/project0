@@ -67,7 +67,7 @@ nav a{
 }
 
 main{
-	width: 85%;
+
 	margin: 30 auto;
 	background-color: lightgrey;
 	border:3px solid burlywood;
@@ -110,6 +110,10 @@ footer{
 	padding:15px;
 	background-color: #000;
   color:#fff;
+}
+
+@media screen and (min-width:801px){
+  width: 85%;
 }
 
 @media screen and (max-width:800px){
