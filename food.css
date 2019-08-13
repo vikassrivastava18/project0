@@ -1,68 +1,112 @@
 
-  
-  body {
-    
-    font-family: Halvetica, Arial, san-serif;
+body {
+  margin: none;
+  font-family: Halvetica, Arial, san-serif;
+  border: 5px solid crimson;
   }
-  h1, nav{
+
+header{
+  padding:20px;
+}
+
+
+header img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(70px + 2vw);
+}
+
+h1{
+  font-size: calc(12px + 1.9vw);
+  /*text-shadow: 2px 2px 0 rgba(255,0,0,0.7) ; */
+  text-shadow: 2px 2px 2px rgba(255,0,0,0.3) ;
+  color: green;
+  background-color: white;
+  text-decoration: underline;
+  margin-top: 0px;
+
+}
+
+h1, nav{
 	text-align:center;
   }
-  ol{
+
+
+ol{
  	list-style-type:none;
 }
 
-#mainWeb{
-	
-}
 main{
 	margin: 0 auto;
-	padding:40px;
-	background: 
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%),
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%),
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%),
-
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%) 50px 50px;
-background-color:#b03;
-background-size:100px 100px;
-
-
+	padding:10px;
+	/*display:flex;*/
 }
 
-main h2{
-	color:#fff;
-}
 #main_section{
-   
+   /*flex:5;*/
    padding:20px;
-   margin: 20px;
+   margin: 10px;
    margin-top:10px;
 }
+
  aside{
-   
-    padding:8px;
+  /*flex:1;*/
+    padding:25px;
     background-color: #74d3edbf;
     margin:22px;
+    color:#fff;
     margin-right:0px;
-   
+    background:
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%),
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%),
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%),
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%) 50px 50px;
+    background-color:#b03;
+    background-size:100px 100px;
+    border: 1px solid;
 }
+
+figure img{
+  max-width: 100%;
+}
+
+figure{
+   border: thin #c0c0c0 solid;
+   display: flex;
+   flex-flow: column;
+   padding: 5px;
+   max-width: 220px;
+   margin: auto;
+}
+
+figcaption{
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
 section h2{
  margin-left: 20px;
  text-decoration: underline;
+ color:crimson;
 }
+
 aside h2{
     text-align:center;
     color:#fff;
     text-decoration:underline;
+    margin-bottom: 25px;
 }
 
- .container{
+.container{
 	padding:20px;
 }
 
@@ -71,75 +115,95 @@ p{
   font-size: 20px;
   padding:20px;
 }
- #first_m, #second_m, #third_m {
+
+#first_m, #second_m, #third_m {
    background-color: lightgreen;
    font-weight: 120%;
    opacity: 0.75;
    padding:15px;
+   border: 1px solid
 }
 
-  #containerx{
-	width:65%;
+#containerx{
 	margin: 0 auto;
 }
-  #thirdDiv, #secondDiv, #firstDiv {
+
+#thirdDiv, #secondDiv, #firstDiv {
     padding:15px;
     margin:15px;
     background-color: white;
-    border: 5px solid #fff;
-    
+    border: 2px solid crimson;
   }
-  #thirdDiv div img, #secondDiv div img, #firstDiv div img {
+
+#thirdDiv div img, #secondDiv div img, #firstDiv div img {
     width: 303px;
     border: 4px solid lightblue;
     border-radius: 50%;
   }
 
-  #thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
+#thirdDiv div div h3, #secondDiv div div h3, #firstDiv div div h3 {
     margin-top: 0px;
   }
-  #firstDiv{
+
+ #firstDiv{
    background:url(images/paneer_bcg.jpg) no-repeat;
    background-position: center;
-} 
-    #secondDiv{
+}
+ #secondDiv{
    background:url(images/dosa_bcg.jpg) no-repeat;
    background-position: center;
 }
-  h1 {
-    /*text-shadow: 2px 2px 0 rgba(255,0,0,0.7) ; */
-3    text-shadow: 2px 2px 2px rgba(255,0,0,0.3) ;
-    
-    color: green;
-    background-color: white;
-    text-decoration: underline;
-    margin-top: 0px;
-   
-  }
 
 
-  main h3{
+
+main h3{
 	text-decoration:underline;
 	padding: 12px;
-	
-}
-  
+  }
 
- 
 nav{
 	padding: 8px;
 	font-size: 1.2em;
-	background: linear-gradient(90deg, #fff 0%, #f560b4  48.7%, #fff 100%);
+	background: linear-gradient(90deg, #fff 0%, #d2aac0  48.7%, #fff 100%);
+  text-align: center;
 	}
+
 nav a{
 	padding:8px;
-	color:#fff;
-	padding-right:100px;
+  padding-right: 20px;
+  font-size: calc(7px + 1vw);
 }
+
 footer{
-	background-color:lightgrey;
+	background-color:#000;
 	margin-top: 10px;
 	padding: 10px;
-	
+  color: #fff;
 }
+
+/* Media queries */
+@media screen and (min-width:900px){
+  main{
+  	display:flex;
+  }
+
+  #containerx{
+    width:65%;
+  }
+
+  #main_section{
+     flex:5;
+  }
+
+   aside{
+      flex:1;
+  }
+}
+
+@media screen and (max-width:899px){
+    aside{
+      width: 80%;
+      margin: 0 auto;
+
+    }
 }

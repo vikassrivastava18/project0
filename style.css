@@ -1,13 +1,12 @@
 html{
-
-background-color:black;
-background-image:
-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 body{
@@ -22,202 +21,177 @@ body{
 }
 
 header{
-	text-align: center;
+	padding: 10px;
 	margin-top: 0px;
 	position: relative;
-	width:100%;
-	background-color:#7bb2d7;
-	clip-path: circle(50% at 50% 9%);
+	text-align: center;
+	width:60%;
+	margin: 0 auto;
+	border-bottom: 2px solid lightblue;
+}
+
+hr{
+	color:blue;
 }
 h1{
-
+	font-size: calc(20px + 4.4vw);
+	color:crimson;
 	margin-top: 0px;
-	text-decoration: underline;
-	font-size: calc(20px + 3vw);
-	text-align: center;
-
 }
+
 h2{
 	text-decoration: underline;
 }
-header h2{
-	text-decoration: underline;
-	font-size: calc(5px + 2vw);
-	text-align: center;
-}
 
 main{
-	margin-top: 20px;
-	padding-right: 20px;
+	margin-top: 30px;
 	line-height: 1.3em;
-	border-right: 1px solid black;
-        margin-left: 0px;
-        text-align:center;
+	border-right: 1px solid lightblue;
+ 	margin-left: 0px;
+	text-align: center;
 
 }
-
+main img{
+	margin-top: 30px;
+	}
 
 article h2{
 	padding-left: 10px;
 	text-decoration: underline;
-	font-size: calc(5px + 2vw);
+
 }
 
 #aside{
 	padding-left: 45px;
 }
+
 aside{
-
 	margin-left: 12px;
+}
 
+aside h2{
+	margin-bottom:20px;
 }
 article {
 	font-size: 0.8em;
-
 }
 
 article i{
 	font-size: 1.8em;
 }
+
 p{
 	padding-left: 30px;
 }
 
-#v{
-
-	-webkit-clip-path: polygon(53% 39%, 100% 1%, 51% 100%, 51% 100%, 0 0);
-	clip-path: polygon(53% 39%, 100% 1%, 51% 100%, 51% 100%, 0 0);
-}
-#i{
-
-	-webkit-clip-path: polygon(45% 7%, 0 3%, 0 0, 100% 0, 55% 7%, 57% 84%, 100% 85%, 58% 84%, 96% 100%, 15% 	100%, 38% 85%, 43% 84%);
-	clip-path: polygon(45% 7%, 0 3%, 0 0, 100% 0, 55% 7%, 57% 84%, 100% 85%, 58% 84%, 96% 100%, 15% 100%, 	38% 85%, 43% 84%);
-	}
-#k{
-
-	-webkit-clip-path: polygon(50% 0, 24% 0, 24% 50%, 22% 99%, 50% 98%, 50% 70%, 80% 100%, 100% 80%, 70% 	50%, 100% 20%, 80% 0%, 50% 30%);
-	clip-path: polygon(50% 0, 24% 0, 24% 50%, 22% 99%, 50% 98%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 	20%, 80% 0%, 50% 30%);
-
-border-bottom: 15px solid;
-}
-
-#a{
-	width: 140px;
-	-webkit-clip-path: polygon(44% 0, 48% 0, 98% 97%, 59% 40%, 36% 41%, 0 98%);
-	clip-path: polygon(44% 0, 48% 0, 98% 97%, 59% 40%, 36% 41%, 0 98%);
-}
-
-#s{
-
-	-webkit-clip-path: polygon(16% 50%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 27% 14%, 27% 48%, 85% 77%, 85% 	100%, 15% 100%, 15% 85%, 63% 80%);
-	clip-path: polygon(16% 50%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 27% 14%, 27% 48%, 85% 77%, 85% 100%, 15% 	100%, 15% 85%, 63% 80%);
-}
-
 a{
-	 overflow-wrap: break-word;
-	 word-wrap: break-word;
+  overflow-wrap: break-word;
+ 	word-wrap: break-word;
 }
+
 section{
 	margin-top: 20px;
-	padding-left:30px;
+	padding-left:calc(15px + 2vw);
 }
+
 aside{
 	font-size: 0.7em;
 }
+
 footer{
 	float: right;
-
 	color:white;}
+
+/* Medi queries here ----*/
 @media screen and (min-width: 1280px){
 
-
-    header img{
-	width: 120px;
+  header img{
+		width: 120px;
    }
-    .mainCont{
-        position: relative;
-        display: flex;
-        flex-flow: row-wrap;
-        /*background-color: orange;*/
-        height:47vh;
-    }
-    main{
 
-	flex: 5;
+  .mainCont{
+    position: relative;
+    display: flex;
+    flex-flow: row-wrap;
     }
-    main p{
-	padding-top: 30px;
-}
+
+  main{
+		flex: 5;
+
+  }
+
+  main p{
+		padding-top: 30px;
+
+	}
 
   main img{
-	max-width: 150px;
-	border-bottom: 2px solid;
+		max-width: 150px;
+		border-bottom: 2px solid;
+		}
 
-}
-
-    aside{
-        flex: 2;
-        max-height: 100%;
-	margin-top: 20px;
-        padding:10px;
-
-
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width:1279px){
-	header{
-		padding: 20px;
-	}
-	header img{
-	width: 80px;
-
-   	}
-	.mainCont{
-        position: relative;
-        display: flex;
-        flex-flow: row-wrap;
-        /*background-color: orange;*/
-        height:47vh;
-    }
-    main{
-
-	flex: 5;
-    }
-    main img{
-        width: 65px;
-
-   }
-
-
-    aside{
-        flex: 2;
-	font-size: 0.6em;
-        max-height: 100%;
-        padding:10px;
-    }
-}
-
- @media screen and (max-width: 799px) {
-	header{
-		padding: 20px;
-	}
-   header img{
-	width: 43px;
-
-   }
-  main, aside{
-	width: 100%;
-}
-  main img, #a{
-      width: 60px;
+  aside{
+    flex: 2;
+    max-height: 100%;
+    margin-top: 20px;
+    padding:10px;
 
   }
 }
 
-#bottom_img{
-	position:absolute;
-	right:50%;
-	bottom:0px;
-	border-radius: 50%;
+@media screen and (min-width: 800px) and (max-width:1279px){
+
+	header{
+		padding: 20px;
+		}
+
+	header img{
+		width: 80px;
+   	}
+	.mainCont{
+    position: relative;
+    display: flex;
+    flex-flow: row-wrap;
+    }
+
+  main{
+			flex: 5;
+    }
+
+  main img{
+      width: 65px;
+   }
+
+  aside{
+    flex: 2;
+    font-size: 0.6em;
+    max-height: 100%;
+    padding:10px;
+    }
+}
+
+ @media screen and (max-width: 799px) {
+	body{
+		width:100%;
+	}
+
+	header{
+		padding: 20px;
+	}
+
+  header img{
+		width: 43px;
+   }
+
+  main, aside{
+		width: 100%;
+		border-bottom: 1px solid lightblue;
+	}
+
+  #aside{
+	padding-left:15px;
+	}
+  main img, #a{
+      width: 60px;
+  }
 }

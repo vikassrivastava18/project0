@@ -5,18 +5,18 @@ body{
 header{
 	text-align:center;
 	background: 
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%),
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%),
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%),
+radial-gradient(circle closest-side at 60% 43%,  #b4ece6 26%, rgba(167,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 43%,  #b4ece6 26%, rgba(167,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 22%,  #b4ece6 45%, rgba(201,51,85,0) 46%),
+radial-gradient(circle closest-side at 60% 22%,  #b4ece6 45%, rgba(201,51,85,0) 46%),
+radial-gradient(circle closest-side at 50% 35%,  #b4ece6 30%, rgba(201,51,85,0) 31%),
 
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%) 50px 50px;
-background-color:#b03;
+radial-gradient(circle closest-side at 60% 43%,  #b4ece6 26%, rgba(167,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 43%,  #b4ece6 26%, rgba(167,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 22%,  #b4ece6 45%, rgba(201,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 60% 22%,  #b4ece6 45%, rgba(201,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 50% 35%,  #b4ece6 30%, rgba(201,51,85,0) 31%) 50px 50px;
+
 background-size:100px 100px;
     position: relative;
     width: 100%;
@@ -27,11 +27,11 @@ background-size:100px 100px;
     position: absolute;
     bottom: 8vh;
     left: 8vw;
-    width: calc(85px + 2.7vw);
+    width: calc(65px + 2.7vw);
     max-height: 90%; 
 }
 #header2{
-    width: calc(70px + 1.9vw);
+ 
     float:right;
     margin-right:100px;
 }
@@ -46,7 +46,7 @@ h1{
 }
 nav{
     padding:6px;
-    background-color: #e34583;
+    background-color: #45c2e3;
 }
 nav > * {
     display: inline;
@@ -120,7 +120,8 @@ aside{
 }
 
 footer{
-	padding:15px;
+	
+	text-align:center;
 	background: 
 radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(167,0,51,0) 27%),
 radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(167,0,51,0) 27%),
@@ -134,8 +135,18 @@ radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(201,51,85,0) 46%)
 radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(201,51,85,0) 46%) 50px 50px,
 radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(201,51,85,0) 31%) 50px 50px;
 background-color:#b03;
-background-size:80px 80px;
+background-size:100px 100px;
+    position: relative;
+    width: 100%;
+    background-repeat: repeat;
+	margin-top: 0px;
 }
+
+footer p{
+	padding:20px;
+	margin-top:0px;
+}
+
 @media screen and (max-width: 430px){
     header{
         position: relative;
