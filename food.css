@@ -2,7 +2,7 @@
 body {
   margin: none;
   font-family: Halvetica, Arial, san-serif;
-  border: 5px solid crimson;
+  border: 5px dotted crimson;
   }
 
 header{
@@ -160,7 +160,7 @@ main h3{
 nav{
 	padding: 8px;
 	font-size: 1.2em;
-	background: linear-gradient(90deg, #fff 0%, #d2aac0  48.7%, #fff 100%);
+	background: linear-gradient(90deg, #fff 0%, #f560b4 48.7%, #fff 100%);
   text-align: center;
 	}
 
